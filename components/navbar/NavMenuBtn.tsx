@@ -50,7 +50,7 @@ export default function NavMenuBtn({
       className="pointer-events-auto absolute right-[2.5%] top-4 z-[51] flex items-center gap-4 translate-x-[calc(5rem+2.5vw)]"
     >
       {/* Tombol Bendera */}
-      <button
+      {/* <button
         onClick={toggleLanguage}
         className="transition-transform duration-200 hover:scale-110"
         aria-label="Toggle Language"
@@ -64,7 +64,7 @@ export default function NavMenuBtn({
             🇬🇧
           </span>
         )}
-      </button>
+      </button> */}
 
       {/* Tombol Hamburger */}
       <MagneticEffect>
