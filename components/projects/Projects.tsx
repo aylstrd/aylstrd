@@ -34,33 +34,33 @@ function ProjectsGrid() {
           Search projects by title or filter by category
         </h3>
         <div className="flex justify-between gap-2 pb-2 border-b">
-          <div className="flex justify-between gap-2">
-            <span className="hidden sm:block p-2.5 shadow-sm rounded-xl cursor-pointer">
-              <FiSearch className="w-5 h-5 text-white" />
-            </span>
-            <input
-              onChange={(e) => {
-                setSearchProject(e.target.value);
-              }}
-              className="py-2 pl-3 pr-1 text-sm text-white border border-gray-200 rounded-lg font-general-medium sm:px-4"
-              id="name"
-              name="name"
-              type="search"
-              required
-              placeholder="Search Projects"
-              aria-label="Name"
-            />
-          </div>
+  <div className="flex justify-between gap-2">
+    <span className="hidden sm:block p-2.5 shadow-sm rounded-xl cursor-pointer bg-gray-100 dark:bg-gray-100">
+      <FiSearch className="w-5 h-5 text-gray-700 dark:text-gray-700" />
+    </span>
+    <input
+      onChange={(e) => {
+        setSearchProject(e.target.value);
+      }}
+      className="py-2 pl-3 pr-1 text-sm text-gray-700 bg-gray-100 border border-gray-200 rounded-lg dark:border-gray-200 font-general-medium sm:px-4 dark:bg-gray-200 dark:text-gray-700"
+      id="name"
+      name="name"
+      type="search"
+      required
+      placeholder="Search Projects"
+      aria-label="Name"
+    />
+  </div>
 
           <ProjectsFilter setSelectProject={setSelectProject} />
         </div>
       </div>
+      <div className="grid text-gray-900 dark:text-gray-900 grid-cols-1 mt-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 max-w-[1200px]">
+  {filteredProjects.map((project) => (
+    <ProjectSingle key={project.id} {...project} />
+  ))}
+</div>
 
-      <div className="grid text-white grid-cols-1 mt-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 max-w-[1200px]">
-        {filteredProjects.map((project) => (
-          <ProjectSingle key={project.id} {...project} />
-        ))}
-      </div>
     </section>
   );
 }
