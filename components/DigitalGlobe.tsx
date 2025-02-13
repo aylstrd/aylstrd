@@ -33,19 +33,19 @@ export default function DigitalGlobe({ className }: DigitalGlobeProps) {
   return (
     <div
       className={cn(
-        "max-md h-32 w-32 overflow-hidden rounded-lg bg-zinc-200",
+        "relative max-md h-32 w-32 overflow-hidden rounded-lg bg-white ring-4 ring-gray-700",
         className
       )}
       ref={el}
     >
-      <div className="fence">
-        <div className="fence-wrap">
+      <div className="relative w-full h-full fence">
+        <div className="absolute w-full h-full fence-wrap">
           {/* Garis-garis dengan warna yang berubah sesuai tema */}
-          <div className="light:border-black fence-bar vertical dark:border-black"></div>
-          <div className="border-black fence-bar vertical dark:border-black"></div>
-          <div className="border-black fence-bar vertical dark:border-black"></div>
-          <div className="border-black fence-bar horizontal dark:border-black"></div>
-          <div className="border-black fence-bar horizontal-middle dark:border-black"></div>
+          <div className="border-2 border-gray-700 fence-bar vertical"></div>
+          <div className="border-2 border-gray-700 fence-bar vertical"></div>
+          <div className="border-2 border-gray-700 fence-bar vertical"></div>
+          <div className="border-2 border-gray-700 fence-bar horizontal"></div>
+          <div className="border-2 border-gray-700 fence-bar horizontal-middle"></div>
         </div>
       </div>
     </div>
