@@ -40,7 +40,7 @@ export default function ContactTitle({ title }: ContactTitleProps) {
 
   return (
     <div ref={el} className="py-24 text-5xl font-bold text-center ">
-      <p className="title-text text-zinc-200 dark:text-zinc-800">{title}</p>
+      <p className="title-text text-zinc-800">{title}</p>
     </div>
   )
 }

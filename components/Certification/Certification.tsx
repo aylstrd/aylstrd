@@ -14,12 +14,12 @@ const ProjectsGrid: React.FC = () => {
   return (
     <section id="certification" className="py-5 mt-5 sm:py-10 sm:mt-10">
       <motion.div
-        className="text-center"
+        className="text-center text-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
       >
-        <p className="mb-2 text-4xl font-extrabold tracking-tight sm:text-7xl text-ternary-dark dark:text-ternary-light">
+        <p className="mb-2 text-4xl font-extrabold tracking-tight text-white sm:text-7xl text-ternary-dark dark:text-ternary-light">
           Certification
         </p>
         <br />

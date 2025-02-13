@@ -25,7 +25,7 @@ export default function NavHome() {
     >
       <div className="pb-1 overflow-hidden">
         <Link href="/" className="inline-flex items-center group gap-x-2">
-          <p className="font-semibold uppercase text-md">DAL</p>
+          <p className="font-semibold text-white uppercase text-md">DAL</p>
         </Link>
       </div>
     </div>

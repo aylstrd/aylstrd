@@ -89,7 +89,7 @@ export default function ContactForm() {
               name="name"
               autoComplete="off"
               onFocus={() => handleFocus(1)}
-              className="w-full py-5 text-xl font-bold transition-colors duration-200 ease-in-out bg-transparent outline-none peer text-zinc-200 placeholder:text-zinc-200/50 dark:text-zinc-800 dark:placeholder:text-zinc-800/50"
+              className="w-full py-5 text-xl font-bold transition-colors duration-200 ease-in-out bg-transparent outline-none peer text-zinc-800 placeholder:text-zinc-800/50"
             />
             <ContactFormLine inputId={1} hasError={errors.name} />
           </div>
@@ -109,7 +109,7 @@ export default function ContactForm() {
               autoComplete="off"
               placeholder="Your email"
               onFocus={() => handleFocus(2)}
-              className="w-full py-5 text-xl font-bold transition-colors duration-200 ease-in-out bg-transparent outline-none peer text-zinc-200 placeholder:text-zinc-200/50 dark:text-zinc-800 dark:placeholder:text-zinc-800/50"
+              className="w-full py-5 text-xl font-bold transition-colors duration-200 ease-in-out bg-transparent outline-none peer text-zinc-800 placeholder:text-zinc-800/50"
             />
             <ContactFormLine inputId={2} hasError={errors.email} />
           </div>
@@ -129,7 +129,7 @@ export default function ContactForm() {
               autoComplete="off"
               placeholder="Subject"
               onFocus={() => handleFocus(3)}
-              className="w-full py-5 text-xl font-bold transition-colors duration-200 ease-in-out bg-transparent outline-none peer text-zinc-200 placeholder:text-zinc-200/50 dark:text-zinc-800 dark:placeholder:text-zinc-800/50"
+              className="w-full py-5 text-xl font-bold transition-colors duration-200 ease-in-out bg-transparent outline-none peer text-zinc-800 placeholder:text-zinc-800/50"
             />
             <ContactFormLine inputId={3} hasError={errors.subject} />
           </div>
@@ -144,7 +144,7 @@ export default function ContactForm() {
         <div className="group">
           <div className="relative overflow-hidden">
             <textarea
-              className="peer min-h-[11rem] w-full resize-none bg-transparent py-5 text-xl font-bold text-zinc-200 outline-none transition-colors duration-200 ease-in-out placeholder:text-zinc-200/50 dark:text-zinc-800 dark:placeholder:text-zinc-800/50"
+              className="peer min-h-[11rem] w-full resize-none bg-transparent py-5 text-xl font-bold outline-none transition-colors duration-200 ease-in-out text-zinc-800 placeholder:text-zinc-800/50"
               placeholder="Your Message"
               name="message"
               onFocus={() => handleFocus(4)}

@@ -26,7 +26,7 @@ const Experience = () => {
   return (
     <div id="experience" className="flex items-center justify-center w-full min-h-screen py-20">
       <div className="text-center">
-        <p className="mb-2 text-4xl font-extrabold tracking-tight sm:text-7xl text-ternary-dark dark:text-ternary-light">
+        <p className="mb-2 text-4xl font-extrabold tracking-tight text-white sm:text-7xl">
           Experience
         </p>
         <br></br>
@@ -63,7 +63,7 @@ const Experience = () => {
                     backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
                     borderRadius: `calc(1.75rem * 0.96)`,
                   }}
-                  className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                  className="flex-1 text-white dark:text-white border-neutral-200 dark:border-slate-800"
                 >
                   <div className="flex flex-col gap-5 p-6 lg:flex-row lg:items-center md:p-6 lg:p-12">
                     <img

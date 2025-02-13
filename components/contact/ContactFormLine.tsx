@@ -19,7 +19,7 @@ export default function ContactFormLine({
         "pointer-events-none absolute bottom-0 right-0 h-[90px] w-[300%] fill-none stroke-[1.75] transition-colors duration-300 will-change-transform",
         hasError
           ? "stroke-red-500/70 peer-focus:!stroke-red-500"
-          : "stroke-zinc-200 dark:stroke-zinc-800 peer-focus:!stroke-zinc-200/50 dark:peer-focus:!stroke-zinc-800/50"
+          : "stroke-zinc-800 peer-focus:!stroke-zinc-800/50"
       )}
       preserveAspectRatio="none"
     >

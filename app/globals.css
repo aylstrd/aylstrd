@@ -4,16 +4,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* Putih terang */
-    --foreground: 240 10% 3.9%; /* Teks hitam */
-    background-color: #ffffff !important; /* Putih terang */
-    color: #241c34; /* Teks warna biru tua */
-
-    --foreground-rgb: 255, 255, 255;
-
-    --background-start-rgb: 255, 255, 255;
-    --background-end-rgb: 255, 255, 255; /* Latar belakang putih */
-    --foreground-rgb: 0, 0, 0; /* Teks hitam untuk terang */
+    background-color: #4b3a61 !important; /* Putih terang */
+    color: white; 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
 
@@ -45,6 +37,17 @@
 .body {
     background-color: #241c34; /* Biru Tua untuk tema gelap */
     color: white; /* Teks putih untuk tema gelap */
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #4b3a61 !important; /* Putih terang */
+  }
+
+  .light {
+    background-color: #241c34; /* Biru Tua untuk tema gelap */
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

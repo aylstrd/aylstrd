@@ -24,7 +24,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] max-w-[16rem] w-full mx-auto p-3 relative lg:h-[10rem] rounded-2xl ml-[-25px]"
+      className="border dark:border-black/[0.2] group/canvas-card flex items-center justify-center max-w-[16rem] w-full mx-auto p-3 relative lg:h-[10rem] rounded-2xl ml-[-25px]"
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:
@@ -47,7 +47,7 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover/canvas-card:opacity-0 transition duration-200 min-w-40 mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="relative z-10 mt-4 text-3xl font-bold text-center text-black transition duration-200 opacity-0 dark:text-white group-hover/canvas-card:opacity-100 group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2">
+        <h2 className="relative z-10 mt-4 text-3xl font-bold text-center text-white transition duration-200 opacity-0 group-hover/canvas-card:opacity-100 group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2">
           {title}
         </h2>
         <p
@@ -81,7 +81,7 @@ export default function About() {
         <div className="flex items-center justify-between w-full mb-10 gap-x-2 md:mb-16">
           <AnimateTitle
             title={"About me"}
-            className="text-left text-[40px] font-bold leading-[0.9em] tracking-tighter sm:text-[45px] md:text-[60px] lg:text-[80px]"
+            className="text-left text-white text-[40px] font-bold leading-[0.9em] tracking-tighter sm:text-[45px] md:text-[60px] lg:text-[80px]"
             wordSpace="mr-[14px]"
             charSpace="mr-[0.0001em]"
           />
@@ -90,7 +90,7 @@ export default function About() {
 
 
         <div className="mx-auto flex w-full flex-col lg:max-w-[1500px] lg:flex-row lg:gap-20">
-          <div className="lg:mg-18 mb-30 flex w-full flex-col gap-4 text-[90px] font-medium leading-relaxed tracking-wide md:mb-16 md:gap-6 md:text-[300px] md:leading-relaxed lg:max-w-[120%] lg:text-base">
+          <div className="lg:mg-18 mb-30 flex w-full flex-col gap-4  text-white text-[90px] font-medium leading-relaxed tracking-wide md:mb-16 md:gap-6 md:text-[300px] md:leading-relaxed lg:max-w-[120%] lg:text-base">
           <br></br>
             <AnimateParagraph
               paragraph="Saya lulusan Pendidikan Teknologi Informasi dengan keahlian di bidang pengembangan perangkat lunak, manajemen basis data, dan solusi teknologi modern. Saya memiliki kemampuan untuk menganalisis kebutuhan sistem, merancang arsitektur perangkat lunak, dan mengimplementasikan solusi yang efisien sesuai kebutuhan pengguna."
@@ -108,10 +108,10 @@ export default function About() {
     
           <div className="mb-24 flex w-full flex-col gap-4 leading-relaxed tracking-wide sm:mb-32 md:mb-50 md:gap-6 md:leading-relaxed lg:mb-16 lg:max-w-[100%]">
             <div className="flex flex-col gap-4 md:gap-1">
-              <p className="mb-2 text-4xl font-extrabold tracking-tight sm:text-2xl text-ternary-dark dark:text-ternary-light">
+              <p className="mb-2 text-4xl font-extrabold tracking-tight text-white sm:text-2xl ">
                 Bidang Diminati
               </p>
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2"> {/* Tambahkan grid layout di sini */}
+              <div className="grid grid-cols-1 gap-6 text-white sm:grid-cols-2"> {/* Tambahkan grid layout di sini */}
                 <Card
                   title="Software Development"
                   icon={<AceternityIcon order="1" />}
@@ -119,7 +119,7 @@ export default function About() {
                 >
                   <CanvasRevealEffect
                     animationSpeed={5.1}
-                    containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+                    containerClassName="bg-emerald-900  text-white rounded-3xl overflow-hidden"
                   />
                 </Card>
                 <Card
@@ -129,7 +129,7 @@ export default function About() {
                 >
                   <CanvasRevealEffect
                     animationSpeed={3}
-                    containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
+                    containerClassName="bg-pink-900  text-white  rounded-3xl overflow-hidden"
                     colors={[[255, 166, 158], [221, 255, 247]]}
                     dotSize={2}
                   />

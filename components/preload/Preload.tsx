@@ -32,14 +32,13 @@ export default function Preload({ endedLoading }: PreloadProps) {
       className={cn(
         "flex min-h-screen w-full items-center justify-center opacity-100 transition-all duration-700 ease-in-out",
         endedLoading && "opacity-0",
-        "bg-white",
-        "dark:bg-[#241c34]" 
+        "bg-[#241c34]",
       )}
     >
       <div className="stroke">
         <LaptopLogo />
         
-        <div className="text-center font-semibold" ref={counterRef}>
+        <div className="font-semibold text-center text-white" ref={counterRef}>
           0%
         </div>
         <div className="flex items-center justify-center text-sm text-gray-500">

@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="col-span-8 text-center place-self-center sm:text-left justify-self-start"
         >
    <h1 className="mb-4 font-extrabold">
-  <span className="text-5xl text-black dark:text-white sm:text-5xl lg:text-5xl">
+  <span className="text-5xl text-white sm:text-5xl lg:text-5xl">
     Hello, I'm Dewi Ayu Lestari
     <br />
   </span>
@@ -33,7 +33,7 @@ const HeroSection = () => {
   wrapper="span"
   speed={50}
   repeat={Infinity}
-  className="text-[12rem] sm:text-[8rem] lg:text-[6rem] text-blue-500 dark:text-blue-300"
+  className="text-[12rem] sm:text-[8rem] lg:text-[6rem] text-blue-300"
 />
 </h1>
 
@@ -43,7 +43,7 @@ const HeroSection = () => {
               href="/#contact"
               className="inline-block w-full px-6 py-3 mr-4 rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:from-blue-600 hover:to-teal-600"
             >
-              <span className="text-black dark:text-white">Hire Me</span>
+              <span className="text-white">Hire Me</span>
             </Link>
             <Link
               href="https://drive.google.com/file/d/1eYYIPVwKcxD_9PslktzsQowxqvheJte3/view?usp=drive_link"

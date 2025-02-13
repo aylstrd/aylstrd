@@ -37,7 +37,7 @@ const slugs = [
 function Skills() {
   return (
     <div id="skills"  className="py-10 my-10">
-       <p className="mb-2 text-4xl font-extrabold tracking-tight sm:text-7xl text-ternary-dark dark:text-ternary-light">
+       <p className="mb-2 font-extrabold tracking-tight text-white -4xl text sm:text-7xl text-ternary-dark dark:text-ternary-light">
         Skills & Technologies
       </p>
       <br></br>

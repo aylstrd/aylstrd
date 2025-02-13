@@ -10,11 +10,11 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="contact-section relative z-[0] mt-24 flex min-h-screen w-full flex-col items-center justify-center overflow-x-clip bg-[#241c34] dark:bg-zinc-100"
+      className="contact-section relative z-[0] mt-24 flex min-h-screen w-full flex-col items-center justify-center overflow-x-clip bg-[#241c34 bg-zinc-100"
     >
       <ContactRounded />
       <div className="w-full overflow-hidden px-[5%]">
-        <div className="contact-content relative flex min-h-[100svh] w-full flex-col items-center justify-between pt-12">
+        <div className=" text-white contact-content relative flex min-h-[100svh] w-full flex-col items-center justify-between pt-12">
           <ContactTitle title="Contact" />
           <ContactForm />
           <div className="flex justify-between w-full py-12">
@@ -22,7 +22,7 @@ export default function Contact() {
            
             </div>
             <div className="flex flex-col items-end">
-              <p className="mb-4 text-xl font-semibold text-zinc-200 dark:text-zinc-800">
+              <p className="mb-4 text-xl font-semibold text-zinc-800">
                 Links
               </p>
              
@@ -34,28 +34,28 @@ export default function Contact() {
                 aria-label="Github Link"
               >
                 <MagneticEffect>
-                  <GithubIcon className="w-8 h-8 text-zinc-100 dark:text-zinc-800" />
+                  <GithubIcon className="w-8 h-8 text-zinc-800" />
                 </MagneticEffect>
               </Link>
                 <ContactLink
                   href="mailto:dewiayulestari378@gmail.com"
                   label="Email"
                   icon={
-                    <MailIcon className="text-zinc-200 dark:text-zinc-800" />
+                    <MailIcon className="text-zinc-800" />
                   }
                 />
                 <ContactLink
                   href="https://linkedin.com/in/dewiayulestari27"
                   label="LinkedIn"
                   icon={
-                    <LinkedinIcon className="text-zinc-200 dark:text-zinc-800" />
+                    <LinkedinIcon className="text-zinc-800" />
                   }
                 />
               </div>
             </div>
           </div>
             {/* Copyright Section */}
-            <div className="w-full py-4 text-center text-zinc-200 dark:text-zinc-800">
+            <div className="w-full py-4 text-center text-zinc-800">
             <p>&copy; {new Date().getFullYear()} ayude. All rights reserved.</p>
           </div>
         </div>

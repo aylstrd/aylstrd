@@ -47,11 +47,11 @@ function ThemeSwitcher() {
     <>
       <div id="stars"></div>
       <Tabs defaultValue={theme}>
-        <TabsList className="border dark:border-zinc-600 dark:bg-zinc-800">
-          <TabsTrigger value="light" onClick={() => setTheme("body")}>
+        <TabsList className="text-white border border-zinc-600 bg-zinc-800">
+          <TabsTrigger value="light" onClick={() => setTheme("light")} className="text-white">
             <SunIcon className="w-4 h-4" />
           </TabsTrigger>
-          <TabsTrigger value="dark" onClick={() => setTheme("dark")}>
+          <TabsTrigger value="dark" onClick={() => setTheme("dark")} className="text-white">
             <MoonIcon className="w-4 h-4 transition-all rotate-90 dark:rotate-0" />
           </TabsTrigger>
         </TabsList>

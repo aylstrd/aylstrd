@@ -30,7 +30,7 @@ const ProjectSingle: React.FC<ProjectSingleProps> = ({
       <Link href={`/projects/${id}`} passHref>
         {/* Grid & Border Menyatu */}
         <motion.div
-          className="relative overflow-hidden border border-white rounded-xl bg-secondary-light dark:bg-ternary-dark"
+          className="relative overflow-hidden border border-white rounded-xl bg-secondary-dark bg-ternary-dark"
           whileHover={{
             rotateX: 50, // Slight rotation for depth
             translateZ: -20, // Move the element backwards without scaling
@@ -53,11 +53,11 @@ const ProjectSingle: React.FC<ProjectSingleProps> = ({
           />
 
           {/* Deskripsi */}
-          <div className="px-4 py-6 text-center bg-white dark:bg-gray-900">
-            <p className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">
+          <div className="px-4 py-6 text-center bg-whitebg-gray-900">
+            <p className="mb-2 text-xl font-semibold text-white light:text-black">
               {title}
             </p>
-            <span className="text-lg text-gray-600 dark:text-gray-300">
+            <span className="text-lg text-gray-300">
               {category}
             </span>
           </div>

@@ -8,7 +8,7 @@ const Clients = () => {
   return (
     <section id="motto" className="py-20">
       {/* Title yang di tengah */}
-      <h1 className="mb-8 text-4xl font-extrabold tracking-tight text-center sm:text-7xl text-ternary-dark dark:text-ternary-light">
+      <h1 className="mb-8 text-4xl font-extrabold tracking-tight text-center text-white sm:text-7xl text-ternary-dark dark:text-ternary-light">
         Motto
       </h1>
 

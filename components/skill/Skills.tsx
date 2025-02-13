@@ -55,7 +55,7 @@ function Skills({}: Props) {
 
   return (
     <motion.div
-      className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center justify-center"
+      className="h-screen flex relative flex-col  text-white text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center justify-center"
     >
       <motion.div
         initial={{ y: 50, opacity: 0 }}

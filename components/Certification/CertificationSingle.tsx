@@ -30,7 +30,7 @@ const ProjectSingle: React.FC<ProjectSingleProps> = ({ id, img, title, category,
         target={link ? "_blank" : undefined}
         rel={link ? "noopener noreferrer" : undefined}
       >
-        <div className="max-w-screen-lg mx-auto transition-all duration-300 rounded-md cursor-pointer mb-9 hover:shadow-xl sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+        <div className="max-w-screen-lg mx-auto text-white transition-all duration-300 rounded-md cursor-pointer mb-9 hover:shadow-xl sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
           <div>
             <Image
               src={img}
