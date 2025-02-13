@@ -79,7 +79,7 @@ export default function NavMenu() {
       <div
         ref={menuBgRef}
         className={cn(
-          "nav-menu-bg absolute left-0 top-0 h-screen w-full bg-gradient-to-r from-black/[.13] via-black/[.16] to-black/[.35] opacity-0",
+          "nav-menu-bg absolute left-0 top-0 h-screen w-full bg-gradient-to-r from-black/[.13] via-black/[.16] to-black/[.35] opacity-0 text-white",
           active ? "pointer-events-auto" : "pointer-events-none"
         )}
         onClick={() => setActive(false)}
@@ -91,7 +91,7 @@ export default function NavMenu() {
           "nav-menu pointer-events-auto absolute right-0 top-0 flex h-full w-full max-w-lg translate-x-[150%] flex-col justify-between bg-[#241c34]  pb-12 pt-[clamp(3.5rem,10vh,5rem)] text-5xl text-white will-change-transform [-webkit-perspective:1000]"
         )}
       >
-        <div className="nav-rounded absolute left-0 top-[-10%] z-[-1] h-[120%] w-[80%] -translate-x-1/2 rounded-[100%_100%] bg-[#241c34] will-change-transform [-webkit-perspective:1000]"></div>
+        <div className="nav-rounded absolute left-0 top-[-10%] z-[-1] h-[120%] w-[80%] -translate-x-1/2 rounded-[100%_100%] bg-[#241c34] will-change-transform [-webkit-perspective:1000] text-white"></div>
 
         {/* Bagian Atas Menu */}
         <div>
@@ -169,7 +169,7 @@ export default function NavMenu() {
         {/* Bagian Links */}
         <div>
           <NavMenuLine title={"Links"} />
-          <div className="flex gap-x-2 px-[clamp(1.25rem,3vw,2.5rem)] text-base">
+          <div className="flex gap-x-2 px-[clamp(1.25rem,3vw,2.5rem)] text-base text-white">
             <MagneticEffect>
               <NavMenuSocial
                 title={<FaLinkedin size={24} color="#0077B5" />}
@@ -190,7 +190,7 @@ export default function NavMenu() {
             </MagneticEffect>
             <MagneticEffect>
               <NavMenuSocial
-                title={<FaGithub size={24} className="title-black-300 title-white" />}
+                title={<FaGithub size={24} className="text-white title-black-300 title-white" />}
                 active={active}
                 classes="pr-6"
                 duration={1}

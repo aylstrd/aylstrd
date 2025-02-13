@@ -33,16 +33,16 @@ function ProjectsGrid() {
         <h3 className="mb-3 text-center text-white font-general-regular text-secondary-dark text-ternary-dark text-md sm:text-xl">
           Search projects by title or filter by category
         </h3>
-        <div className="flex justify-between gap-2 pb-2 border-b border-primary-dark border-secondary-dark">
+        <div className="flex justify-between gap-2 pb-2 border-b">
           <div className="flex justify-between gap-2">
-            <span className="hidden sm:block bg-primary-dark bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer">
-              <FiSearch className="w-5 h-5 text-ternary-dark" />
+            <span className="hidden sm:block p-2.5 shadow-sm rounded-xl cursor-pointer">
+              <FiSearch className="w-5 h-5 text-white" />
             </span>
             <input
               onChange={(e) => {
                 setSearchProject(e.target.value);
               }}
-              className="py-2 pl-3 pr-1 text-sm text-white border border-gray-200 rounded-lg font-general-medium sm:px-4 border-secondary-dark sm:text-md bg-secondary-dark bg-ternary-dark text-primary-dark text-ternary-dark"
+              className="py-2 pl-3 pr-1 text-sm text-white border border-gray-200 rounded-lg font-general-medium sm:px-4"
               id="name"
               name="name"
               type="search"

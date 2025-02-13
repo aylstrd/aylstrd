@@ -15,7 +15,7 @@ function ProjectsFilter({ setSelectProject }: ProjectsFilterProps) {
       onChange={(e) => {
         setSelectProject(e.target.value);
       }}
-      className="px-4 py-2 text-sm text-white border rounded-lg sm:px-6 dark:border-secondary-dark sm:text-md dark:font-medium bg-secondary-dark dark:bg-ternary-dark text-primary-dark text-ternary-dark ark:border-secondary-dark light:border-secondary-dark light:font-medium light:bg-ternary-dark"
+      className="px-4 py-2 text-sm text-white border rounded-lg sm:px-6"
     >
       <option value="" className="text-sm text-white sm:text-md">
         All Projects

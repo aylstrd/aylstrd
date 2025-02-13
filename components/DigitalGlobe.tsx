@@ -40,12 +40,12 @@ export default function DigitalGlobe({ className }: DigitalGlobeProps) {
     >
       <div className="fence">
         <div className="fence-wrap">
-          {/* Garis-garis dengan warna hitam di semua tema */}
-          <div className="border-black fence-bar vertical"></div>
-          <div className="border-black fence-bar vertical"></div>
-          <div className="border-black fence-bar vertical"></div>
-          <div className="border-black fence-bar horizontal"></div>
-          <div className="border-black fence-bar horizontal-middle"></div>
+          {/* Garis-garis dengan warna yang berubah sesuai tema */}
+          <div className="light:border-black fence-bar vertical dark:border-black"></div>
+          <div className="border-black fence-bar vertical dark:border-black"></div>
+          <div className="border-black fence-bar vertical dark:border-black"></div>
+          <div className="border-black fence-bar horizontal dark:border-black"></div>
+          <div className="border-black fence-bar horizontal-middle dark:border-black"></div>
         </div>
       </div>
     </div>
